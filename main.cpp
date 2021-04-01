@@ -7,6 +7,8 @@
 #include<fstream>
 //#include<allocators>
 using namespace std;
+//byebye c++ cry
+
 
  int isKeyword(char buffer[]){
     char keywords[][10] ={"auto","break","case","char","const","continue","default",
