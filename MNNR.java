@@ -13,9 +13,9 @@ public class MNNR {
         Scanner();
     }
     
-    static String identiferRegularExperssion = "[_][0-9][_a-zA-Z]+";
-    static String digit = "[0-9]+";
-    static String comment = "[/][*][_a-zA-Z]+";
+    static String identiferRegularExperssion = "[*][0-9_a-zA-Z]+";
+    static String digit = "[0-5]+";
+    static String comment = "[$$][0-5 a-z]+";
     static String Output="\'[a-zA-Z]+\'";
     
     static String token;
