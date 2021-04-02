@@ -108,9 +108,11 @@ public class MNNR {
             }
 
         } 
+        //في حال عدم العثور على الملف يطلع ذا الارور
         catch (FileNotFoundException ex) {
             //قابل للتعديل نقول الكلام انه مالقى الملف وكالام
-            System.out.println("File code not found !!");
+            //تم
+            System.out.println("I can't found the file code!");
         }
     }
 }
