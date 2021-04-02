@@ -102,7 +102,7 @@ public class MNNR {
                 } else if (Pattern.matches(Output, token)) {
                     tokenCat = "Output to the user";
                 } else {
-                    tokenCat = "you have error in token !"+/n+" in this line ::" + i;
+                    tokenCat = "you have error in token, in this line ::" + i;
                 }
                 System.out.println("Here is the result of Scanner ->>");
                 System.out.println("(" + token +")"+ "*****" +"("+ tokenCat + ")");
