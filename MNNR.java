@@ -23,9 +23,11 @@ public class MNNR {
     static String Filename = "ErrorTrueCode.txt";
   // استخدمنا لينكد ليست 
     static List keywords = new LinkedList();
-    static List symbols = new LinkedList();
+    
     static List Operation = new LinkedList();
+    static List symbols = new LinkedList();
     static List logialOP = new LinkedList();
+    
     public static void Scanner() {
          //انها هاذي public
         keywords.add("pub");
@@ -40,6 +42,24 @@ public class MNNR {
         keywords.add("boolean");keywords.add("class");keywords.add("void");
         keywords.add("true");keywords.add("println");
         keywords.add("NAD");keywords.add("ITANA");keywords.add("MARWS");keywords.add("RTOJ");
+        
+        
+        Operation.add("+");
+        //تربيع
+        Operation.add("^");
+        //سيقما
+        Operation.add("&");
+        //-100من كل رقم 
+        Operation.add("!");
+        Operation.add("-");
+        //تعطيني ارقام عشريه
+        Operation.add("%");
+        Operation.add("*");
+        Operation.add("/");
+        Operation.add("=");
+        
+        
+        
         //يمدينا نعدل عليها بشكل واضح
         //بدايه loop
         symbols.add("{.");
@@ -54,20 +74,6 @@ public class MNNR {
         symbols.add('@');symbols.add('?');
         symbols.add('~');symbols.add("(");
         symbols.add(")"); 
-       
-        Operation.add("+");
-        //تربيع
-        Operation.add("^");
-        //سيقما
-        Operation.add("&");
-        //-100من كل رقم 
-        Operation.add("!");
-        Operation.add("-");
-        //تعطيني ارقام عشريه
-        Operation.add("%");
-        Operation.add("*");
-        Operation.add("/");
-        Operation.add("=");
 
         logialOP.add("||");
         logialOP.add("&&");
