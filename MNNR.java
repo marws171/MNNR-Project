@@ -30,7 +30,8 @@ public class MNNR {
                 else if ("=".contains(token)) {
                     tokenName = " is assignment";
                 }
-                else if ("==".contains(token) || "||".contains(token) || "!=".contains(token)) {
+                else if ("==".contains(token) || "||".contains(token)||"&&".contains(token) 
+                         || "!=".contains(token)"<=".contains(token) ||">=".contains(token)) {
                     tokenName = " is comparison";
                 } 
                 else if (Pattern.matches("[%/+*-]+", token)) {
