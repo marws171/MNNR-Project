@@ -34,7 +34,7 @@ public class MNNR {
                          || "!=".contains(token)"<=".contains(token) ||">=".contains(token)) {
                     tokenName = " is comparison";
                 } 
-                else if (Pattern.matches("[%/+*-]+", token)) {
+                else if (Pattern.matches("[%/+*-sqrt()math.power(,)]+", token)) {
                     tokenName = " is operator";
                 } 
                 else if ("{".contains(token)) {
