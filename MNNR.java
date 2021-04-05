@@ -1,4 +1,3 @@
-//ملاحظه : مروة بتمسك جزئية الفايل 
 package mnnrprojct;
 
 import java.io.File;
