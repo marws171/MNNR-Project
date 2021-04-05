@@ -62,7 +62,7 @@ public class MNNR {
                     tokenName = " is float number";
                 }
                 else {
-                    System.out.print("there an error in token !!! in line :" + line);
+                    System.out.print("We did not recognize the token in line :" + line);
                 }
                 System.out.println("(" + token +")"+ "*****" +"("+ tokenName +")");
                 if (token.endsWith(";")) {
