@@ -22,9 +22,9 @@ public class MNNR {
             inputCode = new Scanner(new File(Filename));
             while (inputCode.hasNext()) {
                 token = inputCode.next();
-                if (token.equals("int") || token.equals("float") || token.equals("for") 
-                        || token.equals("chr") || token.equals("while") || token.equals("void") 
-                        || token.equals("static") || token.equals("null") || token.equals("class")) {
+                if (token.equals("int") || token.equals("float") || token.equals("for")|| token.equals("String") 
+                        || token.equals("chr")|| token.equals("public") || token.equals("private")|| token.equals("while")
+                    || token.equals("void")|| token.equals("static") || token.equals("null") || token.equals("class")) {
                     tokenName = " is keyword";
                 }
                 else if ("=".contains(token)) {
