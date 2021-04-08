@@ -7,6 +7,8 @@ import java.util.regex.Pattern;
 
 
 public class MNNR {
+
+    private static CharSequence taken;
     
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in); 
@@ -29,12 +31,13 @@ public class MNNR {
                 else if ("=".contains(token)) {
                     tokenName = " is assignment";
                 }
-                else if ("==".contains(token) || "||".contains(token)||"&&".contains(token) 
-                         || "!=".contains(token)||"<=".contains(token) ||">=".contains(token)) {
+                else if ("==".contains(token) || "||".contains(token)||"&&".contains(token)
+                        || "!=".contains(token)||"<=".contains(token)||">=".contains(token)) {
                     tokenName = " is comparison";
                 } 
-                 Else if ("math.cos".contains(token)||"math.sin".contains(token)||"sqrt".contains(taken)||"math.power".contains(taken)||"*".contains(taken)||
-                  "/".contains(taken)||"+".contains(taken)||"-".contains(taken)||"%".contains(taken)){
+                 else if ("math.cos".contains(token)||"math.sin".contains(token)
+                         ||"sqrt".contains(token)||"math.power".contains(token)||"*".contains(token)||
+                  "/".contains(token)||"+".contains(token)||"-".contains(token)||"%".contains(token)){
                     tokenName = " is operator";
                 } 
                 else if ("{".contains(token)) {
@@ -52,7 +55,7 @@ public class MNNR {
                 else if (";".contains(token)) {
                     tokenName = " is semicolon";
                 }
-                else if (Pattern.matches("[[*][_a-zA-Z0-5]+]", token)) {
+                else if (Pattern.matches("[[*][_a-z A-Z 0-5]+]", token)) {
                     tokenName = " is Identitier";
                 }
                 else if (Pattern.matches("[0-9]+", token)) {
