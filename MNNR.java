@@ -23,9 +23,11 @@ public class MNNR {
             inputCode = new Scanner(new File(Filename));
             while (inputCode.hasNext()) {
                 token = inputCode.next();
-                if ("int".equals(token) || "float".equals(token) ||"for".equals(token)|| "String".equals(token)
-                        || "chr".equals(token)|| "public".equals(token) || "private".equals(token)|| "while".equals(token)
-                    || "void".equals(token)|| "static".equals(token) || "null".equals(token) || "class".equals(token) ) {
+                if ("int".equals(token) ||"if".equals(token) ||"else".equals(token) ||"elseif".equals(token) ||"do".equals(token) ||"return".equals(token) 
+                    ||"float".equals(token)||"for".equals(token)||"String".equals(token)||"protect".equals(token)||"package".equals(token)||"new".equals(token)
+                    ||"char".equals(token)||"public".equals(token)||"private".equals(token)||"while".equals(token)||"catch".equals(token)||"try".equals(token)
+                    ||"void".equals(token)||"static".equals(token)||"null".equals(token)||"class".equals(token)||"this".equals(token)||"boolean".equals(token)
+                    ||"long".equals(token)||"enter".equals(token)||"print".equals(token)||"goto".equals(token)||"const".equals(token)||"double".equals(token) ) {
                     tokenName = " is keyword";
                     
                 }
