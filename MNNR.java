@@ -23,16 +23,17 @@ public class MNNR {
             inputCode = new Scanner(new File(Filename));
             while (inputCode.hasNext()) {
                 token = inputCode.next();
-                if (token.equals("int") || token.equals("float") || token.equals("for")|| token.equals("String") 
-                        || token.equals("chr")|| token.equals("public") || token.equals("private")|| token.equals("while")
-                    || token.equals("void")|| token.equals("static") || token.equals("null") || token.equals("class")) {
+                if ("int".equals(token) || "float".equals(token) ||"for".equals(token)|| "String".equals(token)
+                        || "chr".equals(token)|| "public".equals(token) || "private".equals(token)|| "while".equals(token)
+                    || "void".equals(token)|| "static".equals(token) || "null".equals(token) || "class".equals(token) ) {
                     tokenName = " is keyword";
+                    
                 }
                 else if ("=".contains(token)) {
                     tokenName = " is assignment";
                 }
                 else if ("==".contains(token) || "||".contains(token)||"&&".contains(token)
-                        || "!=".contains(token)||"<=".contains(token)||">=".contains(token)) {
+                        || "!=".contains(token)||"<=".contains(token)||">=".contains(token) ||"+=".contains(token)) {
                     tokenName = " is comparison";
                 } 
                  else if ("math.cos".contains(token)||"math.sin".contains(token)
@@ -56,7 +57,7 @@ public class MNNR {
                     tokenName = " is semicolon";
                 }
                 else if (Pattern.matches("[[*][_a-z A-Z 0-5]+]", token)) {
-                    tokenName = " is Identitier";
+                    tokenName = " is Identifier";
                 }
                 else if (Pattern.matches("[0-9]+", token)) {
                     tokenName = " is integer number";
@@ -65,17 +66,18 @@ public class MNNR {
                     tokenName = " is float number";
                 }
                 else {
-                    System.out.print("We did not recognize the token in line :" + line);
-                }
+                    System.out.print("Error!! We did not recognize the token in line :" 
+                            + line +" in this word --> "+"(" +token+")...");
+                    
+                } 
+                
                 System.out.println("(" + token +")"+ "*****" +"("+ tokenName +")");
                 if (token.endsWith(";")) {
                     line++;
                 }
             }
-            
         }catch(FileNotFoundException e){
             System.out.println("File code not found !!");
         }
-    }
-      
+    }//C:\Users\USER\Desktop\mnnr.txt
 }
