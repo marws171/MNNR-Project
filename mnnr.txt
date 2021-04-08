@@ -1,0 +1,7 @@
+public static 
+{
+ int d ;
+int e ;  
+ d = 5 ;
+ e = 8 ; 
+}
