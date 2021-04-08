@@ -30,7 +30,7 @@ public class MNNR {
                     tokenName = " is assignment";
                 }
                 else if ("==".contains(token) || "||".contains(token)||"&&".contains(token) 
-                         || "!=".contains(token)"<=".contains(token) ||">=".contains(token)) {
+                         || "!=".contains(token)||"<=".contains(token) ||">=".contains(token)) {
                     tokenName = " is comparison";
                 } 
                  Else if ("math.cos".contains(token)||"math.sin".contains(token)||"sqrt".contains(taken)||"math.power".contains(taken)||"*".contains(taken)||
