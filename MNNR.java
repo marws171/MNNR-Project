@@ -49,6 +49,10 @@ public class MNNR {
                          ||";".contains(token)){
                           tokenName = " is Symbols";
                           }
+                else if ("true".contains(token)||"false".contains(token))
+                {
+                tokenName = " is Boolean";
+                }
                 else if ("{".contains(token)) {
                     tokenName = " is open bracket";
                 } 
