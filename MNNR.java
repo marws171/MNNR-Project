@@ -79,9 +79,9 @@ public class MNNR {
                 }
                 else {
                     System.out.print("Error!! We did not recognize the token in line :" 
-                            + line +" in this word --> ");
+                            + line +" in word");
                 } 
-                System.out.println("(" + token +")"+ "*****" +"("+ tokenName +")");
+                System.out.println("(" + token +")"+ "--->" + tokenName);
                 if (token.endsWith("@")) {
                     line++;
                 }
