@@ -45,8 +45,7 @@ public class MNNR {
                     tokenName = " is operator";
                 } 
                  else if (",".contains(token)||"?".contains(token)||"[".contains(token)||"]".contains(token)||"~".contains(token)||"&".contains(token)||"!".contains(token)||
-                          "^".contains(token)||"¬".contains(token)||"_".contains(token)||"`".contains(token)||".".contains(token)||"'".contains(token)||":".contains(token)||
-                          ";".contains(token)||"#".contains(token)){
+                          "^".contains(token)||"¬".contains(token)||"_".contains(token)||"`".contains(token)||"'".contains(token)||":".contains(token)||"#".contains(token)){
                           tokenName = " is Symbos";
                           }
                 else if ("{".contains(token)) {
