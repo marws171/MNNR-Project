@@ -27,7 +27,7 @@ public class MNNR {
                     ||"float".equals(token)||"for".equals(token)||"String".equals(token)||"protect".equals(token)||"package".equals(token)||"new".equals(token)
                     ||"char".equals(token)||"public".equals(token)||"private".equals(token)||"while".equals(token)||"catch".equals(token)||"try".equals(token)
                     ||"void".equals(token)||"static".equals(token)||"null".equals(token)||"class".equals(token)||"this".equals(token)||"boolean".equals(token)
-                    ||	"break".eduals(token)||"switch".eduals(token)||"long".equals(token)||"enter".equals(token)||"print".equals(token)||"goto".equals(token)||"const".equals(token)||"double".equals(token) ) {
+                    ||	"break".equals(token)||"switch".equals(token)||"long".equals(token)||"enter".equals(token)||"print".equals(token)||"goto".equals(token)||"const".equals(token)||"double".equals(token) ) {
                     tokenName = " is keyword";
                     
                 }
