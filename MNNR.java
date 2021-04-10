@@ -60,6 +60,9 @@ public class MNNR {
                 else if ("@".contains(token)) {
                     tokenName = " is End stetmint";
                 }
+                else if ("$".contains(token)) {
+                    tokenName = " comment";
+                } 
                 else if (Pattern.matches("[[*][_a-z A-Z 0-5]+]", token)) {
                     tokenName = " is Identifier";
                 }
