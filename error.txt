@@ -1,0 +1,7 @@
+tan 76 cot 99@
+{
+ int d @
+int e @
+ d = 5 @
+ e = 3 @
+}
