@@ -55,8 +55,9 @@ public class MNNR {
                 else if (")".contains(token)) {
                     tokenName = " is closed paren";
                 } 
-                else if (";".contains(token)) {
-                    tokenName = " is semicolon";
+                
+                else if ("@".contains(token)) {
+                    tokenName = " is End stetmint";
                 }
                 else if (Pattern.matches("[[*][_a-z A-Z 0-5]+]", token)) {
                     tokenName = " is Identifier";
@@ -64,7 +65,7 @@ public class MNNR {
                 else if (Pattern.matches("[0-5]+", token)) {
                     tokenName = " is integer number";
                 }
-                else if (Pattern.matches("[0-9]+[.][0-9]+", token)) {
+                else if (Pattern.matches("[0-5]+[.][0-5]+", token)) {
                     tokenName = " is float number";
                 }
                 else {
@@ -73,8 +74,8 @@ public class MNNR {
                     
                 } 
                 
-                System.out.println("(" + token +")"+ "****" +"("+ tokenName +")");
-                if (token.endsWith(";")) {
+                System.out.println("(" + token +")"+ "*****" +"("+ tokenName +")");
+                if (token.endsWith("@")) {
                     line++;
                 }
             }
