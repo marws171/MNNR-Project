@@ -1,7 +1,8 @@
+$$ this code for scanner test
 public static 
 {
- int d ;
-int e ;  
- d = 5 ;
- e = 8 ; 
+ int d @
+int e @
+ d = 5 @
+ e = 8 @
 }
