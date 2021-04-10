@@ -47,7 +47,7 @@ public class MNNR {
                  else if (",".contains(token)||"?".contains(token)||"[".contains(token)||"]".contains(token)||"~".contains(token)||"&".contains(token)||"!".contains(token)||
                           "^".contains(token)||"¬".contains(token)||"_".contains(token)||"`".contains(token)||"'".contains(token)||":".contains(token)||"#".contains(token)
                          ||";".contains(token)){
-                          tokenName = " is Symbos";
+                          tokenName = " is Symbols";
                           }
                 else if ("{".contains(token)) {
                     tokenName = " is open bracket";
