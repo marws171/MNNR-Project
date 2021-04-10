@@ -61,7 +61,7 @@ public class MNNR {
                 else if (Pattern.matches("[[*][_a-z A-Z 0-5]+]", token)) {
                     tokenName = " is Identifier";
                 }
-                else if (Pattern.matches("[0-9]+", token)) {
+                else if (Pattern.matches("[0-5]+", token)) {
                     tokenName = " is integer number";
                 }
                 else if (Pattern.matches("[0-9]+[.][0-9]+", token)) {
@@ -73,7 +73,7 @@ public class MNNR {
                     
                 } 
                 
-                System.out.println("(" + token +")"+ "*****" +"("+ tokenName +")");
+                System.out.println("(" + token +")"+ "****" +"("+ tokenName +")");
                 if (token.endsWith(";")) {
                     line++;
                 }
