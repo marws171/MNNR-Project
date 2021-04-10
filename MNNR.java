@@ -16,7 +16,7 @@ public class MNNR {
         String token;
         Scanner inputCode;
         String Filename;
-        Filename = input.nextLine();
+        Filename = input.nextLine()+".txt";
         String tokenName = null;
         int line = 1;
         try{
@@ -79,16 +79,16 @@ public class MNNR {
                 }
                 else {
                     System.out.print("Error!! We did not recognize the token in line :" 
-                            + line +" in this word --> "+"(" +token+")...");
-                    
+                            + line +" in this word --> ");
                 } 
-                
                 System.out.println("(" + token +")"+ "*****" +"("+ tokenName +")");
                 if (token.endsWith("@")) {
                     line++;
                 }
+            
             }
-        }catch(FileNotFoundException e){
+        }
+        catch(FileNotFoundException e){
             System.out.println("File code not found !!");
         }
     }//C:\Users\USER\Desktop\mnnr.txt
