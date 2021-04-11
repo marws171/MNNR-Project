@@ -1,7 +1,9 @@
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.LinkedList;
 import java.util.Scanner;
-public class KMP2 {
-    
+
+public class anthrTest {
     public static int[] PrefixLen(String pattern) {
         
         int patternsize = pattern.length();
@@ -25,6 +27,8 @@ public class KMP2 {
         return array;
     }
     public static LinkedList<Integer> KMPOF(String text, String pattern) {
+        System.out.println("text = "+"( "+ text +" )");
+        System.out.println("pattern = " +"( "+ pattern+" )");
         int i = 0;
         int j = 0;
         int i_Length = text.length();
@@ -50,19 +54,23 @@ public class KMP2 {
         }
         return null;
     }
-    public static void main(String[] args) {
-        String text ;
-        String pattern ;
-        Scanner input = new Scanner(System.in);
-        System.out.println ("Enter the text please : ");
-        text = input.nextLine();
-        System.out.println ("Enter the pattern please : ");
-        pattern = input.nextLine();
-        System.out.println("text = "+"( "+ text +" )");
-        System.out.println("pattern = " +"( "+ pattern+" )");
+   public static void main(String[] args ){
+       Scanner input = new Scanner(System.in); 
+        System.out.println ("Enter the name of File : ");
+        String text = null;
+        Scanner inputText;
+        String Filename;
+        Filename = input.nextLine()+".txt";
+        try{
+            inputText = new Scanner(new File(Filename));
+            text = inputText.next();
+        }catch(FileNotFoundException e){
+            System.out.println("File text not found !!");
+        }
+        String pattern = "accba";
         KMPOF(text, pattern);
-	}
-}
+    }
+} 
 //runing time is O( m + n )
 /*
 text = abcbaccbaacbbcbbbbbaacbcaccbacbcbabcbbcbcbabbbbaccbaccbcbcbbcbcbcabababcbcbcbcbcbcbcbcbcbcbababababbaccbabcccabaaabbacbcbcbabacbacbaccbcaccbabbcabbcbacbbacbabbacbababbcbcbabbcababbacbbabcbabcabbcabcabbcabbacbbcabcabcabbabbcabcbcbcbabbabbabbabbcbcbacbbcbbcbcbbcbcbababbacbacbbacbbacbacbbacbcbcabcabbacbcabbacbaaccbacbacbacbacb
