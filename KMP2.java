@@ -64,7 +64,8 @@ public class anthrTest {
             text = inputText.next();
             String pattern = "accba";
             KMPOF(text, pattern);
-        }catch(FileNotFoundException e){
+        }
+       catch(FileNotFoundException e){
             System.out.println("File text not found !!");
         }
         
