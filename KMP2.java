@@ -55,20 +55,20 @@ public class anthrTest {
         return null;
     }
    public static void main(String[] args ){
-       Scanner input = new Scanner(System.in); 
-        System.out.println ("Enter the name of File : ");
-        String text = null;
+       String text = null;
         Scanner inputText;
         String Filename;
-        Filename = input.nextLine()+".txt";
+        Filename = "text.txt";
         try{
             inputText = new Scanner(new File(Filename));
             text = inputText.next();
+            String pattern = "accba";
+            KMPOF(text, pattern);
         }catch(FileNotFoundException e){
             System.out.println("File text not found !!");
         }
-        String pattern = "accba";
-        KMPOF(text, pattern);
+        
+        
     }
 } 
 //runing time is O( m + n )
